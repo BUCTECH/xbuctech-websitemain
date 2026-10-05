@@ -69,6 +69,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
           Name
           <input
             required
+            minLength={2}
             name="name"
             type="text"
             placeholder="Your name"
@@ -91,6 +92,8 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
         <label className={labelClass}>
           Company / organization
           <input
+            required
+            minLength={2}
             name="company"
             type="text"
             placeholder="Company name"
@@ -100,6 +103,8 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
         <label className={labelClass}>
           Job title
           <input
+            required
+            minLength={2}
             name="job_title"
             type="text"
             placeholder="Your role"
@@ -112,6 +117,10 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
         <label className={labelClass}>
           Phone number
           <input
+            required
+            minLength={7}
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            title="Please enter a valid phone number"
             name="phone"
             type="tel"
             placeholder="512-584-6924"
@@ -139,6 +148,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
         Message
         <textarea
           required
+          minLength={10}
           name="message"
           rows={6}
           placeholder="Tell us what you are working through..."

@@ -93,11 +93,15 @@ export default function FAQPage() {
           </div>
 
           <div className="mt-16 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
-            <p className="max-w-md text-sm leading-6 text-neutral-400">
-              Have a question about your specific environment? We can start with
-              your priorities and recommend the right next step.
-            </p>
-            <Link href="/contact" className="site-button site-button--dark group">
+            <div>
+              <p className="text-lg font-medium text-white sm:text-xl md:whitespace-nowrap">
+                Have a question about your specific environment?
+              </p>
+              <p className="max-w-md text-sm leading-6 text-neutral-400 mt-2">
+                We can start with your priorities and recommend the right next step.
+              </p>
+            </div>
+            <Link href="/contact" className="site-button site-button--dark group shrink-0">
               Talk to an expert
               <ArrowUpRight
                 size={16}
