@@ -7,7 +7,7 @@ import { inquiryTypeBySlug } from "@/lib/services";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact XBUC TECH",
+  title: "Contact Us",
   description:
     "Request a consultation with XBUC TECH about cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, or software testing.",
   alternates: { canonical: "/contact" },

@@ -7,7 +7,7 @@ import { CONSULTATION_CTA } from "@/lib/services";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About XBUC TECH",
+  title: "About Us",
   description:
     "Learn who XBUC TECH works with, how we approach IT and cybersecurity engagements, and what guides our work.",
   alternates: { canonical: "/about" },
