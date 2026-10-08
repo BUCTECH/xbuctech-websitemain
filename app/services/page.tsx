@@ -8,7 +8,7 @@ import { services } from "@/lib/services";
 export const metadata = {
   title: "IT and Cybersecurity Services",
   description:
-    "Explore XBUC TECH managed IT, cybersecurity, cloud infrastructure, compliance, and software testing services built around your business.",
+    "Explore XBUC TECH cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, and software testing services, with the scope and deliverables for each.",
   alternates: { canonical: "/services" },
 };
 
@@ -27,16 +27,16 @@ export default function ServicesPage() {
                 Our services
               </p>
               <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
-                Smart IT &amp; cybersecurity solutions,{" "}
+                Start with the problem,
+                <br />
                 <em className="not-italic text-indigo-400">
-                  tailored for you.
+                  we&apos;ll match the service.
                 </em>
               </h2>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-neutral-400">
-              Explore solutions designed to protect your systems, support
-              your users, strengthen your infrastructure, and help your
-              business operate securely and efficiently.
+              Not sure which service fits? Request a consultation and we&apos;ll
+              help you work out where to start.
             </p>
           </div>
         </section>

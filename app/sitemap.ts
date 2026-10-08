@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
 
-const siteUrl = "https://xbuc.pxxl.dev";
+const siteUrl = "https://xbuctech.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/about", "/services", "/faq", "/contact"];
+  const staticRoutes = ["", "/about", "/services", "/faq", "/contact", "/privacy"];
   const serviceRoutes = services.map((service) => `/services/${service.slug}`);
 
   return [...staticRoutes, ...serviceRoutes].map((route) => ({

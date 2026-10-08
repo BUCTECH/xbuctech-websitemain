@@ -1,23 +1,16 @@
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { inquiryTypeBySlug } from "@/lib/services";
 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact XBUC TECH",
   description:
-    "Talk with XBUC TECH about managed IT, cybersecurity, cloud infrastructure, compliance, and software testing for your business.",
+    "Request a consultation with XBUC TECH about cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, or software testing.",
   alternates: { canonical: "/contact" },
-};
-
-const serviceLabels: Record<string, string> = {
-  cybersecurity: "Cybersecurity Consultation",
-  "managed-it": "Managed IT Support",
-  "cloud-infrastructure": "Cloud & Network Services",
-  "compliance-security": "Compliance & Security",
-  "software-testing": "Software Testing & QA",
 };
 
 export default async function ContactPage({
@@ -27,7 +20,7 @@ export default async function ContactPage({
 }) {
   const params = await searchParams;
   const selectedService = params.service
-    ? serviceLabels[params.service] || params.service
+    ? inquiryTypeBySlug[params.service]
     : undefined;
 
   return (
@@ -49,9 +42,7 @@ export default async function ContactPage({
               </em>
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-neutral-400 sm:text-lg">
-              Tell us what you are building, protecting, or trying to
-              untangle. We&apos;ll bring a practical point of view and a
-              clear next step.
+              Tell us what you need to protect, fix, or improve. We will review your request and recommend a clear next step.
             </p>
             {params.focus ? (
               <p className="mt-5 max-w-md border-l border-indigo-400/60 pl-4 text-sm leading-relaxed text-indigo-200">
@@ -118,13 +109,9 @@ export default async function ContactPage({
                   01
                 </span>
                 <p className="text-sm font-medium text-white">
-                  Schedule a strategy call
+                  Request a consultation
                 </p>
               </div>
-              <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-500">
-                <ShieldCheck size={13} />
-                Secure inquiry
-              </span>
             </div>
             <ContactForm selectedService={selectedService} focus={params.focus} />
           </div>

@@ -14,23 +14,23 @@ export function ContactSection() {
             Start a conversation
           </p>
           <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Your business deserves
+            Let&apos;s build a more
             <br />
-            <em className="not-italic text-indigo-400">better backup.</em>
+            <em className="not-italic text-indigo-400">secure business.</em>
           </h2>
         </div>
 
         <div className="flex flex-col gap-8">
           <p className="text-base leading-relaxed text-neutral-400 sm:text-lg">
-            Tell us where you want to go. We&apos;ll help you build the
-            secure, reliable technology foundation to get there.
+            Tell us what you need to protect, fix, or improve. We&apos;ll
+            recommend practical next steps.
           </p>
 
           <Link
             href="/contact"
             className="site-button site-button--dark group"
           >
-            Talk to an IT consultant
+            Request a consultation
             <ArrowUpRight
               size={16}
               className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

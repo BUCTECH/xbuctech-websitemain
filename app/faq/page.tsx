@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IT and Cybersecurity FAQs",
   description:
-    "Find answers about XBUC TECH managed IT, cybersecurity, cloud services, compliance support, software testing, and client engagement.",
+    "Answers about working with XBUC TECH: engagement types, the first consultation, pricing, remote support, and our IT, cybersecurity, cloud, compliance, and testing services.",
   alternates: { canonical: "/faq" },
 };
 
@@ -24,30 +24,69 @@ const faqs = [
       "Yes. XBUC TECH can provide individual services or a combination of solutions based on your organization's needs, objectives, and existing technology environment.",
   },
   {
-    question: "Can XBUC TECH help with compliance?",
+    question: "Do you offer one-time projects or ongoing support?",
     answer:
-      "Yes. We help organizations strengthen security controls and support compliance initiatives aligned with applicable frameworks and standards, including HIPAA, PCI DSS, NIST, FISMA/NIST RMF, and ISO 27001.",
+      "Both. Some clients need a defined project, such as a vulnerability assessment or a compliance gap analysis. Others need ongoing managed IT support. We agree the scope with you before work begins.",
   },
   {
-    question: "How does XBUC TECH get started with a new client?",
+    question: "What happens during the initial consultation?",
     answer:
-      "We begin by understanding your business, technology environment, challenges, and objectives. We then assess your requirements and recommend practical solutions designed to improve security, reliability, and operational efficiency.",
+      "We learn about your business, your current technology environment, and what you are trying to achieve or fix. Afterward we recommend practical next steps, and where it makes sense, a proposed scope of work.",
+  },
+  {
+    question: "What should I prepare before contacting you?",
+    answer:
+      "Nothing formal is required. It helps to know roughly how many users and systems you have, what you already use, and what prompted you to reach out. Please do not send passwords or other sensitive credentials through the contact form.",
+  },
+  {
+    question: "Can you work alongside our existing IT team?",
+    answer:
+      "Yes. We can support an existing team with specialist work, such as security assessments or compliance preparation, or take on specific responsibilities while your team keeps the rest.",
+  },
+  {
+    question: "Do you support remote clients?",
+    answer:
+      "How we deliver a service depends on the work involved. Tell us your location and setup in your request, and we will confirm whether remote, on-site, or a combination is the right fit.",
+  },
+  {
+    question: "How are services priced?",
+    answer:
+      "Pricing depends on the scope of the work, the size and complexity of your environment, and whether the engagement is a one-time project or ongoing support. We discuss pricing during your consultation.",
+  },
+  {
+    question: "Can XBUC TECH help with compliance?",
+    answer:
+      "Yes. We help organizations strengthen security controls and support compliance efforts aligned with HIPAA, PCI DSS, NIST, FISMA/NIST RMF, and ISO 27001. We support your effort, from gap assessment through audit preparation. We do not guarantee compliance, and certifications such as ISO 27001 are awarded by accredited external auditors.",
   },
   {
     question: "Does XBUC TECH provide cloud services?",
     answer:
-      "Yes. We provide cloud and infrastructure services that can include cloud administration, infrastructure management, cloud security, and backup and disaster recovery solutions.",
+      "Yes. Our cloud and infrastructure services can include cloud administration, infrastructure management, cloud security, and backup and disaster recovery solutions.",
   },
   {
     question: "Do you offer software testing?",
     answer:
-      "Yes. Our Software Testing & Quality Assurance services include manual testing, test automation, functional testing, regression testing, and defect identification and reporting.",
+      "Yes. Our Software Testing & Quality Assurance services include manual testing, test automation, functional testing, regression testing, and defect reporting. Functional testing is not the same as penetration testing or a security assessment, which fall under our cybersecurity services.",
   },
 ];
 
 export default function FAQPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+          }),
+        }}
+      />
       <Header />
       <main className="bg-neutral-950 text-white">
         <section className="border-b border-white/10 px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
@@ -61,9 +100,7 @@ export default function FAQPage() {
                 Clear answers for your next technology decision.
               </h1>
               <p className="max-w-md text-base leading-7 text-neutral-400">
-                Learn how XBUC TECH works with organizations, builds practical
-                solutions, and supports security, infrastructure, cloud,
-                testing, and compliance needs.
+                See how engagements work, what to expect from a first consultation, and how our services fit different needs.
               </p>
             </div>
           </div>
@@ -102,7 +139,7 @@ export default function FAQPage() {
               </p>
             </div>
             <Link href="/contact" className="site-button site-button--dark group shrink-0">
-              Talk to an expert
+              Request a consultation
               <ArrowUpRight
                 size={16}
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

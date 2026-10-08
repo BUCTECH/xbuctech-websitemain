@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { Reveal } from "./Reveal";
 
 export function WhyUs() {
@@ -16,27 +18,23 @@ export function WhyUs() {
           </h2>
         </Reveal>
 
-        <Reveal delay={120} className="flex flex-col gap-6">
+        <Reveal delay={120} className="flex flex-col items-start gap-6">
           <p className="text-lg leading-relaxed text-neutral-200 sm:text-xl">
             We combine hands-on IT experience with cybersecurity knowledge to
             provide solutions that are technically sound and
             business-focused.
           </p>
-
-          <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-400 sm:text-base">
-            <p>
-              Our experience includes enterprise IT environments, systems
-              administration, network infrastructure, cybersecurity
-              operations, vulnerability management, cloud technologies,
-              software testing, and security frameworks.
-            </p>
-            <p>
-              Rather than taking a one-size-fits-all approach, we work with
-              each organization to understand its environment, identify
-              priorities, and develop practical solutions that support
-              security, reliability, performance, and long-term growth.
-            </p>
-          </div>
+          <p className="text-sm leading-relaxed text-neutral-400 sm:text-base">
+            Every environment is different, so we start by understanding
+            yours before recommending anything.
+          </p>
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-300 transition-colors hover:text-white"
+          >
+            More about our background and approach
+            <ArrowRight size={16} />
+          </Link>
         </Reveal>
       </div>
     </section>

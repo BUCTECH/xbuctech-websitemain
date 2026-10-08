@@ -22,29 +22,28 @@ export function Hero() {
             Secure. Manage. Innovate.
           </p>
 
-          <h1 className="mx-auto max-w-6xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
-            Technology built for
+          <h1 className="mx-auto max-w-6xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Secure IT. Stronger Cybersecurity.
             <br />
-            <em className="not-italic text-indigo-400">secure future.</em>
+            <em className="not-italic text-indigo-400">A More Resilient Business.</em>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-neutral-400 sm:text-lg">
-            XBUC TECH helps businesses protect their technology, reduce cyber
-            risk, and improve operational efficiency through enterprise-grade
-            IT and cybersecurity solutions.
+            Practical IT and cybersecurity solutions designed to help businesses
+            reduce risk, protect critical systems, and operate confidently.
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-center">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="site-button group"
             >
-              Get a free consultation
+              Request a consultation
               <ArrowUpRight
                 size={16}
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
-            </a>
+            </Link>
             <Link
               href="/services"
               className="site-button site-button--dark group"

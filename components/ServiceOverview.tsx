@@ -28,19 +28,24 @@ export function ServiceOverview({
           {service.shortTitle}
         </h2>
         <p className="text-sm leading-relaxed text-neutral-400">
-          {service.description}
+          {service.summary}
         </p>
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {service.capabilities.slice(0, 4).map((capability) => (
+        {service.workstreams.slice(0, 4).map((workstream) => (
           <span
-            key={capability}
+            key={workstream.name}
             className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-neutral-400"
           >
-            {capability}
+            {workstream.name}
           </span>
         ))}
+        {service.workstreams.length > 4 ? (
+          <span className="px-1 py-1 text-xs font-medium text-neutral-500">
+            +{service.workstreams.length - 4} more
+          </span>
+        ) : null}
       </div>
 
       <ServiceLink

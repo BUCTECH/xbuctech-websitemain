@@ -1,12 +1,14 @@
 "use client";
 
 import { ArrowUpRight, CheckCircle2, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const inquiryTypes = [
   "Managed IT Support",
   "Cybersecurity Consultation",
-  "Cloud & Network Services",
+  "Cloud & Infrastructure Services",
+  "Network Infrastructure & Visibility",
   "Compliance & Security",
   "Software Testing & QA",
   "General Inquiry",
@@ -14,7 +16,7 @@ const inquiryTypes = [
 ];
 
 const fieldClass =
-  "rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-neutral-600 outline-none transition-colors focus:border-indigo-400/60 focus:bg-white/[0.07]";
+  "rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-neutral-500 outline-none transition-colors focus:border-indigo-400/60 focus:bg-white/[0.07]";
 
 const labelClass = "flex flex-col gap-2 text-sm font-medium text-neutral-300";
 
@@ -123,7 +125,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
             title="Please enter a valid phone number"
             name="phone"
             type="tel"
-            placeholder="512-584-6924"
+            placeholder="512-555-0100"
             className={fieldClass}
           />
         </label>
@@ -151,7 +153,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
           minLength={10}
           name="message"
           rows={6}
-          placeholder="Tell us what you are working through..."
+          placeholder="Tell us what you need help with and any relevant context..."
           className={`${fieldClass} resize-none`}
         />
       </label>
@@ -161,7 +163,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
         disabled={isSubmitting}
         className="group inline-flex w-fit items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-950 transition-transform hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {isSubmitting ? "Sending..." : "Start the conversation"}
+        {isSubmitting ? "Sending..." : "Request a consultation"}
         <ArrowUpRight
           size={16}
           className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -179,9 +181,9 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
           <div className="flex items-start gap-3">
             <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-emerald-300" />
             <div>
-              <p className="font-semibold">Message sent successfully</p>
+              <p className="font-semibold">Request submitted</p>
               <p className="mt-1 text-sm text-emerald-200">
-                Thanks for reaching out. We&apos;ll get back to you as soon as possible.
+                Thanks for reaching out. We will follow up using the email address or phone number you provided.
               </p>
             </div>
           </div>
@@ -189,7 +191,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
       ) : (
         <p className="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
           <ShieldCheck size={14} className="mt-0.5 shrink-0 text-indigo-400" />
-          Securely submitted through ProForms for a fast response.
+          Please do not include passwords or other highly sensitive information in this form. See our <Link href="/privacy" className="underline underline-offset-2 hover:text-white">Privacy Policy</Link>.
         </p>
       )}
     </form>

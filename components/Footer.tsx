@@ -38,7 +38,7 @@ export function Footer() {
           <a href="https://www.facebook.com/profile.php?id=61594184391657" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">Facebook</a>
           <a href="https://x.com/xbuctech" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">X</a>
           <a href="https://www.instagram.com/xbuctech/" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">Instagram</a>
-          <a href="http://linkedin.com/company/x-buctech/" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/x-buctech/" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">LinkedIn</a>
         </div>
 
         <div className="flex flex-col items-start gap-3 text-sm text-neutral-400">
@@ -53,7 +53,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-5 text-xs text-neutral-600 md:col-span-2 lg:col-span-4">
-          <span>© 2026 XBUC TECH</span>
+          <Link href="/privacy" className="mr-4 transition-colors hover:text-white">
+            Privacy Policy
+          </Link>
+          <span>©{new Date().getFullYear()} XBUC TECH. All rights reserved.</span>
         </div>
       </div>
     </footer>

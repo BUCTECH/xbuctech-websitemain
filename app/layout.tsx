@@ -2,20 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://xbuc.pxxl.dev"),
+  metadataBase: new URL("https://xbuctech.com"),
   title: {
     default: "XBUC TECH | IT and Cybersecurity Solutions",
     template: "%s | XBUC TECH",
   },
   description:
-    "XBUC TECH provides managed IT, cybersecurity, cloud infrastructure, compliance, and software testing solutions for secure, reliable business operations.",
+    "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
   applicationName: "XBUC TECH",
   keywords: [
+    "IT and cybersecurity services",
     "managed IT services",
     "cybersecurity solutions",
     "cloud infrastructure",
     "IT support",
-    "compliance security",
+    "compliance support",
+    "network visibility",
     "software testing",
     "Austin IT services",
   ],
@@ -29,17 +31,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://xbuc.pxxl.dev",
+    url: "https://xbuctech.com",
     siteName: "XBUC TECH",
     title: "XBUC TECH | IT and Cybersecurity Solutions",
     description:
-      "Managed IT, cybersecurity, cloud infrastructure, compliance, and software testing solutions for secure, reliable business operations.",
+      "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
   },
   twitter: {
     card: "summary",
     title: "XBUC TECH | IT and Cybersecurity Solutions",
     description:
-      "Secure your technology, manage your IT environment, and build reliable infrastructure with XBUC TECH.",
+      "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
   },
   robots: { index: true, follow: true },
 };

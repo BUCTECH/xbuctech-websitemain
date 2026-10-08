@@ -1,7 +1,7 @@
-import type { Service } from "@/lib/services";
+import { CONSULTATION_CTA, type Service } from "@/lib/services";
 import Link from "next/link";
 import { ServiceLink } from "./ServiceLink";
-import { ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Check, Info, Sparkles } from "lucide-react";
 
 export function ServiceDetail({ service }: { service: Service }) {
   const accentStyle = { "--service-accent": service.accent } as React.CSSProperties;
@@ -38,7 +38,7 @@ export function ServiceDetail({ service }: { service: Service }) {
           </h1>
 
           <p
-            className="mt-4 max-w-lg text-xl font-medium leading-relaxed text-white sm:text-2xl"
+            className="mt-4 max-w-lg text-xl font-medium leading-relaxed sm:text-2xl"
             style={{ color: "var(--service-accent)" }}
           >
             {service.tagline}
@@ -53,7 +53,7 @@ export function ServiceDetail({ service }: { service: Service }) {
             className="site-button group mt-9"
             style={{ backgroundColor: "var(--service-accent)" }}
           >
-            {service.ctaLabel}
+            {CONSULTATION_CTA}
             <ArrowUpRight
               size={16}
               className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -61,29 +61,35 @@ export function ServiceDetail({ service }: { service: Service }) {
           </ServiceLink>
         </div>
 
-        {/* Marker card */}
+        {/* What you receive */}
         <div
-          className="relative flex aspect-square w-full max-w-xs flex-col justify-between rounded-2xl border border-white/10 p-6"
+          className="relative flex w-full max-w-sm flex-col gap-5 rounded-2xl border border-white/10 p-6"
           style={{
             background:
               "linear-gradient(160deg, color-mix(in srgb, var(--service-accent) 18%, transparent), transparent 60%)",
           }}
         >
-          <span
-            className="flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold text-neutral-950"
-            style={{ backgroundColor: "var(--service-accent)" }}
+          <p
+            className="text-xs font-semibold uppercase tracking-[0.2em]"
+            style={{ color: "var(--service-accent)" }}
           >
-            XB
-          </span>
-          <strong className="text-2xl font-semibold leading-tight tracking-tight text-white">
-            BUILT
-            <br />
-            AROUND
-            <br />
-            <em className="not-italic" style={{ color: "var(--service-accent)" }}>
-              YOU.
-            </em>
-          </strong>
+            What you receive
+          </p>
+          <ul className="flex flex-col gap-3">
+            {service.deliverables.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-sm leading-6 text-neutral-200"
+              >
+                <Check
+                  size={16}
+                  className="mt-1 shrink-0"
+                  style={{ color: "var(--service-accent)" }}
+                />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -98,9 +104,9 @@ export function ServiceDetail({ service }: { service: Service }) {
             The work
           </p>
           <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
-            Clarity before
+            {service.workHeading[0]}
             <br />
-            <em className="not-italic text-neutral-500">complexity.</em>
+            <em className="not-italic text-neutral-500">{service.workHeading[1]}</em>
           </h2>
         </div>
 
@@ -109,35 +115,46 @@ export function ServiceDetail({ service }: { service: Service }) {
             {service.detail}
           </p>
 
-          <p className="mt-5 max-w-xl text-sm leading-relaxed text-neutral-500">
-            Each workstream below represents a practical area where we can help
-            strengthen, manage, or validate your technology environment. Select
-            the area closest to your current priority to start a focused
-            conversation with the XBUC TECH team.
-          </p>
-
           <div className="mt-8 divide-y divide-white/10 border-t border-white/10">
-            {service.capabilities.map((capability, index) => (
-              <Link
-                key={capability}
-                href={`/contact?service=${service.slug}&focus=${encodeURIComponent(capability)}`}
-                className="group flex cursor-pointer items-center gap-4 py-4 transition-colors hover:bg-white/[0.02]"
-              >
+            {service.workstreams.map((workstream, index) => (
+              <div key={workstream.name} className="flex items-start gap-4 py-5">
                 <span
-                  className="text-xs font-semibold tabular-nums"
+                  className="pt-0.5 text-xs font-semibold tabular-nums"
                   style={{ color: "var(--service-accent)" }}
                 >
-                  0{index + 1}
+                  {String(index + 1).padStart(2, "0")}
                 </span>
-                <strong className="flex-1 text-sm font-medium text-white sm:text-base">
-                  {capability}
-                </strong>
-                <ArrowUpRight
-                  size={16}
-                  className="shrink-0 text-neutral-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-white"
-                />
-              </Link>
+                <div className="flex-1">
+                  <h3 className="text-base font-medium text-white">
+                    {workstream.name}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-400">
+                    {workstream.description}
+                  </p>
+                  <Link
+                    href={`/contact?service=${service.slug}&focus=${encodeURIComponent(workstream.name)}`}
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-300 transition-colors hover:text-white"
+                  >
+                    Ask about this
+                    <ArrowUpRight size={14} />
+                  </Link>
+                </div>
+              </div>
             ))}
+          </div>
+
+          <div className="mt-8 flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <Info
+              size={18}
+              className="mt-0.5 shrink-0"
+              style={{ color: "var(--service-accent)" }}
+            />
+            <div>
+              <p className="text-sm font-semibold text-white">Good to know</p>
+              <p className="mt-1 text-sm leading-6 text-neutral-400">
+                {service.scopeNote}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -152,13 +169,13 @@ export function ServiceDetail({ service }: { service: Service }) {
             className="h-px w-6"
             style={{ backgroundColor: "var(--service-accent)" }}
           />
-          Ready when you are
+          Next step
         </p>
         <h2 className="mx-auto max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
-          Make your next
+          {service.closing[0]}
           <br />
           <em className="not-italic" style={{ color: "var(--service-accent)" }}>
-            move secure.
+            {service.closing[1]}
           </em>
         </h2>
 
@@ -167,7 +184,7 @@ export function ServiceDetail({ service }: { service: Service }) {
           className="site-button group mx-auto mt-9"
           style={{ backgroundColor: "var(--service-accent)" }}
         >
-          {service.ctaLabel}
+          {CONSULTATION_CTA}
           <ArrowRight
             size={16}
             className="transition-transform group-hover:translate-x-0.5"

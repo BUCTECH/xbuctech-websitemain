@@ -57,7 +57,7 @@ export function Header() {
             href="/contact"
             className="site-button group"
           >
-            Book a call
+            Request a consultation
             <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
@@ -101,7 +101,7 @@ export function Header() {
             onClick={() => setIsOpen(false)}
             className="site-button group mt-2"
           >
-            Book a call
+            Request a consultation
             <ArrowUpRight size={16} />
           </Link>
         </nav>

@@ -8,21 +8,22 @@ export function ServicesHero() {
             Services
           </p>
           <span className="text-sm leading-snug text-neutral-500">
-            Built for the systems
-            <br className="hidden sm:block" /> behind your business
+            Six service areas,
+            <br className="hidden sm:block" /> one connected approach
           </span>
         </div>
 
         <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Explore XBUC TECH
+          IT and cybersecurity services,
           <br />
-          <em className="not-italic text-indigo-400">Tech solutions.</em>
+          <em className="not-italic text-indigo-400">built around your business.</em>
         </h1>
 
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-400 sm:text-lg">
-          From managed IT and cybersecurity to cloud infrastructure, network
-          security, software testing, and compliance, discover technology
-          solutions designed to support and protect your business.
+          From cybersecurity and managed IT to cloud infrastructure, network
+          visibility, compliance support, and software testing, choose one
+          service or combine several. Each page explains the work involved and
+          what you receive.
         </p>
       </div>
     </section>

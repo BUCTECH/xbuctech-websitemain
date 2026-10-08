@@ -5,7 +5,7 @@ const steps = [
   { title: "Assess", text: "We understand your technology environment, challenges, and security requirements.", icon: Clipboard },
   { title: "Protect", text: "We implement practical security and technology solutions designed to reduce risk.", icon: LockKeyhole },
   { title: "Manage", text: "We help maintain your systems, infrastructure, and technology environment.", icon: Settings2 },
-  { title: "Optimize", text: "We continuously identify opportunities to improve performance, reliability, and security.", icon: Sparkles },
+  { title: "Optimize", text: "We regularly look for ways to improve performance, reliability, and security.", icon: Sparkles },
 ];
 
 export function HowWeWork() {
@@ -18,12 +18,12 @@ export function HowWeWork() {
             How we work
           </p>
           <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
-            How XBUC TECH
+            From first call to
             <br />
-            <em className="not-italic text-indigo-400">secures your business.</em>
+            <em className="not-italic text-indigo-400">ongoing support.</em>
           </h2>
           <p className="mt-6 max-w-sm text-base leading-7 text-neutral-400">
-            We identify risks, implement practical solutions, and continuously improve your IT and cybersecurity environment, helping your business stay secure, reliable, and ready for what&apos;s next.
+            Four steps, from understanding your environment to keeping it secure, reliable, and improving over time.
           </p>
         </Reveal>
 
