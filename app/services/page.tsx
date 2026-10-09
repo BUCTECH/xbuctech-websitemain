@@ -8,7 +8,7 @@ import { services } from "@/lib/services";
 export const metadata = {
   title: "IT and Cybersecurity Services",
   description:
-    "Explore XBUC TECH cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, and software testing services, with the scope and deliverables for each.",
+    "Explore X-BUC TECH cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, and software testing services, with the scope and deliverables for each.",
   alternates: { canonical: "/services" },
 };
 

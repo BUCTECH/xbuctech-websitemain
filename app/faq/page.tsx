@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IT and Cybersecurity FAQs",
   description:
-    "Answers about working with XBUC TECH: engagement types, the first consultation, pricing, remote support, and our IT, cybersecurity, cloud, compliance, and testing services.",
+    "Answers about working with X-BUC TECH: engagement types, the first consultation, pricing, remote support, and our IT, cybersecurity, cloud, compliance, and testing services.",
   alternates: { canonical: "/faq" },
 };
 
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Can I choose only the services my business needs?",
     answer:
-      "Yes. XBUC TECH can provide individual services or a combination of solutions based on your organization's needs, objectives, and existing technology environment.",
+      "Yes. X-BUC TECH can provide individual services or a combination of solutions based on your organization's needs, objectives, and existing technology environment.",
   },
   {
     question: "Do you offer one-time projects or ongoing support?",
@@ -54,12 +54,12 @@ const faqs = [
       "Pricing depends on the scope of the work, the size and complexity of your environment, and whether the engagement is a one-time project or ongoing support. We discuss pricing during your consultation.",
   },
   {
-    question: "Can XBUC TECH help with compliance?",
+    question: "Can X-BUC TECH help with compliance?",
     answer:
       "Yes. We help organizations strengthen security controls and support compliance efforts aligned with HIPAA, PCI DSS, NIST, FISMA/NIST RMF, and ISO 27001. We support your effort, from gap assessment through audit preparation. We do not guarantee compliance, and certifications such as ISO 27001 are awarded by accredited external auditors.",
   },
   {
-    question: "Does XBUC TECH provide cloud services?",
+    question: "Does X-BUC TECH provide cloud services?",
     answer:
       "Yes. Our cloud and infrastructure services can include cloud administration, infrastructure management, cloud security, and backup and disaster recovery solutions.",
   },

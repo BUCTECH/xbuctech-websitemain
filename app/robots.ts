@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/mail", "/api/"],
     },
-    sitemap: "https://xbuctech.com/sitemap.xml",
+    sitemap: "https://x-buctech.com/sitemap.xml",
   };
 }

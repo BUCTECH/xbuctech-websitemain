@@ -8,7 +8,7 @@ function isValidText(value: unknown, maxLength: number): value is string {
 }
 
 export async function POST(request: Request) {
-  const fromName = process.env.RESEND_FROM_NAME || "XBUC TECH";
+  const fromName = process.env.RESEND_FROM_NAME || "X-BUC TECH";
 
   if (!process.env.RESEND_API_KEY || !process.env.MAIL_ACCESS_KEY) {
     return NextResponse.json({ error: "Mail service is not configured." }, { status: 503 });
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid mail access key." }, { status: 401 });
   }
   if (!isValidText(from, 320) || !companyEmailPattern.test(from)) {
-    return NextResponse.json({ error: "The sender must use an @xbuctech.com address." }, { status: 400 });
+    return NextResponse.json({ error: "The sender must use an @x-buctech.com address." }, { status: 400 });
   }
 
   const to = parseRecipients(body.to);

@@ -6,7 +6,7 @@ import { FormEvent, KeyboardEvent, useMemo, useState } from "react";
 export type Sender = { email: string; label: string };
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const recentKey = "xbuc-mail-recent";
+const recentKey = "x-buc-mail-recent";
 
 const templates = [
   { id: "blank", label: "Blank message", subject: "", message: "" },
@@ -14,31 +14,31 @@ const templates = [
     id: "follow-up",
     label: "Follow-up",
     subject: "Following up on our conversation",
-    message: "Hi,\n\nThank you for your time earlier. I'm following up on our conversation and the next steps we discussed.\n\nPlease let me know a convenient time to continue.\n\nBest regards,\nXBUC TECH",
+    message: "Hi,\n\nThank you for your time earlier. I'm following up on our conversation and the next steps we discussed.\n\nPlease let me know a convenient time to continue.\n\nBest regards,\nX-BUC TECH",
   },
   {
     id: "proposal",
     label: "Proposal",
-    subject: "XBUC TECH proposal",
-    message: "Hi,\n\nPlease find our proposal outlining the scope, timeline and investment for your project.\n\nWe're happy to walk you through it on a short call.\n\nBest regards,\nXBUC TECH",
+    subject: "X-BUC TECH proposal",
+    message: "Hi,\n\nPlease find our proposal outlining the scope, timeline and investment for your project.\n\nWe're happy to walk you through it on a short call.\n\nBest regards,\nX-BUC TECH",
   },
   {
     id: "meeting",
     label: "Meeting request",
     subject: "Request to schedule a meeting",
-    message: "Hi,\n\nI'd like to schedule a short meeting to discuss how XBUC TECH can support your team.\n\nWould any of the following times work for you?\n- \n- \n\nBest regards,\nXBUC TECH",
+    message: "Hi,\n\nI'd like to schedule a short meeting to discuss how X-BUC TECH can support your team.\n\nWould any of the following times work for you?\n- \n- \n\nBest regards,\nX-BUC TECH",
   },
   {
     id: "support",
     label: "Support reply",
     subject: "Re: Your support request",
-    message: "Hi,\n\nThanks for reaching out. Our team has received your request and is looking into it.\n\nWe'll update you as soon as we have more information.\n\nBest regards,\nXBUC TECH Support",
+    message: "Hi,\n\nThanks for reaching out. Our team has received your request and is looking into it.\n\nWe'll update you as soon as we have more information.\n\nBest regards,\nX-BUC TECH Support",
   },
   {
     id: "thanks",
     label: "Thank you",
     subject: "Thank you",
-    message: "Hi,\n\nThank you for choosing XBUC TECH. We appreciate your trust and look forward to working with you.\n\nBest regards,\nXBUC TECH",
+    message: "Hi,\n\nThank you for choosing X-BUC TECH. We appreciate your trust and look forward to working with you.\n\nBest regards,\nX-BUC TECH",
   },
 ];
 
@@ -189,7 +189,7 @@ export default function Composer({ accessKey, senders }: { accessKey: string; se
   return (
     <form onSubmit={send} className="mt-8 rounded-2xl border border-[#dfe5ed] bg-white shadow-sm">
       <div className="flex items-center justify-between border-b border-[#e8edf2] px-5 py-4 sm:px-7">
-        <div><h2 className="font-semibold text-[#071A3D]">New Message</h2><p className="mt-1 text-xs text-[#8a96a8]">Send from your verified XBUC TECH domain to any address</p></div>
+        <div><h2 className="font-semibold text-[#071A3D]">New Message</h2><p className="mt-1 text-xs text-[#8a96a8]">Send from your verified X-BUC TECH domain to any address</p></div>
         <span className="flex items-center gap-2 text-xs font-semibold text-[#36C36A]"><span className="h-2 w-2 rounded-full bg-[#36C36A]" />Resend Live</span>
       </div>
       <div className="grid gap-5 p-5 sm:p-7">

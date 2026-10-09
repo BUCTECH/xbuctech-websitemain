@@ -1,20 +1,20 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 
 export const RESEND_API = "https://api.resend.com";
-export const companyEmailPattern = /^[^\s@]+@xbuctech\.com$/i;
+export const companyEmailPattern = /^[^\s@]+@x-?buctech\.com$/i;
 export const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export type Sender = { email: string; label: string };
 
 const defaultSenders: Sender[] = [
-  { email: "hello@xbuctech.com", label: "Hello" },
-  { email: "info@xbuctech.com", label: "Info" },
-  { email: "support@xbuctech.com", label: "Support" },
-  { email: "admin@xbuctech.com", label: "Admin" },
-  { email: "noreply@xbuctech.com", label: "No Reply" },
+  { email: "hello@x-buctech.com", label: "Hello" },
+  { email: "info@x-buctech.com", label: "Info" },
+  { email: "support@x-buctech.com", label: "Support" },
+  { email: "admin@x-buctech.com", label: "Admin" },
+  { email: "noreply@x-buctech.com", label: "No Reply" },
 ];
 
-// MAIL_SENDERS="Hello:hello@xbuctech.com,Support:support@xbuctech.com" overrides the defaults.
+// MAIL_SENDERS="Hello:hello@x-buctech.com,Support:support@x-buctech.com" overrides the defaults.
 export function getSenders(): Sender[] {
   const raw = process.env.MAIL_SENDERS;
   if (!raw) return defaultSenders;

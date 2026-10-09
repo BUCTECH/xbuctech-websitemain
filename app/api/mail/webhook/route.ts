@@ -60,7 +60,7 @@ async function forwardInbound(emailId: string) {
   if (!response.ok) return;
   const email: { from?: string; to?: string[]; subject?: string; text?: string; html?: string } = await response.json();
 
-  const fromName = process.env.RESEND_FROM_NAME || "XBUC TECH";
+  const fromName = process.env.RESEND_FROM_NAME || "X-BUC TECH";
   await resend("/emails", {
     method: "POST",
     body: JSON.stringify({

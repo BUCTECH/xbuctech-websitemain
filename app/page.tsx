@@ -30,13 +30,13 @@ export default function Home() {
 
           <div className="flex flex-col justify-end">
             <p className="max-w-md text-base leading-7 text-neutral-300 mb-4">
-              XBUC TECH is an IT and cybersecurity company serving organizations of different sizes. We treat security as the foundation of every technology decision, not an add-on.
+              X-BUC TECH is an IT and cybersecurity company serving organizations of different sizes. We treat security as the foundation of every technology decision, not an add-on.
             </p>
             <p className="max-w-md text-base leading-7 text-neutral-300 mb-6">
               We combine managed IT, cybersecurity, cloud, and network expertise to help you protect your technology, reduce risk, and keep operations reliable.
             </p>
             <Link className="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1" href="/about">
-              About XBUC TECH <span className="ml-1">→</span>
+              About X-BUC TECH <span className="ml-1">→</span>
             </Link>
           </div>
         </div>

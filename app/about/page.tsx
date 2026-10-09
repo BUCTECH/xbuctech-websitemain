@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn who XBUC TECH works with, how we approach IT and cybersecurity engagements, and what guides our work.",
+    "Learn who X-BUC TECH works with, how we approach IT and cybersecurity engagements, and what guides our work.",
   alternates: { canonical: "/about" },
 };
 
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
             <div>
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-indigo-400">
-                About XBUC TECH
+                About X-BUC TECH
               </p>
               <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Secure. Manage. Innovate.
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
             <div className="flex items-end">
               <p className="max-w-md text-base leading-7 text-neutral-300">
-                XBUC TECH is an IT and cybersecurity company based in Austin,
+                X-BUC TECH is an IT and cybersecurity company based in Austin,
                 Texas. We help organizations protect their technology, keep
                 their IT environments running well, and build reliable, secure
                 infrastructure.

@@ -58,11 +58,11 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
       onSubmit={handleSubmit}
       className="flex flex-col gap-5 rounded-2xl border border-white/10 bg-neutral-900/40 p-6 sm:p-8"
     >
-      <input type="hidden" name="source" value="xbuctech.com" />
+      <input type="hidden" name="source" value="x-buctech.com" />
       <input
         type="hidden"
         name="_subject"
-        value="New XBUC TECH consultation request"
+        value="New X-BUC TECH consultation request"
       />
       {focus ? <input type="hidden" name="focus" value={focus} /> : null}
 

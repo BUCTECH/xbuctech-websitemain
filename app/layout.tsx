@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://xbuctech.com"),
+  metadataBase: new URL("https://x-buctech.com"),
   title: {
-    default: "XBUC TECH | IT and Cybersecurity Solutions",
-    template: "%s | XBUC TECH",
+    default: "X-BUC TECH | IT and Cybersecurity Solutions",
+    template: "%s | X-BUC TECH",
   },
   description:
     "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
-  applicationName: "XBUC TECH",
+  applicationName: "X-BUC TECH",
   keywords: [
     "IT and cybersecurity services",
     "managed IT services",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     "software testing",
     "Austin IT services",
   ],
-  authors: [{ name: "XBUC TECH" }],
-  creator: "XBUC TECH",
-  publisher: "XBUC TECH",
+  authors: [{ name: "X-BUC TECH" }],
+  creator: "X-BUC TECH",
+  publisher: "X-BUC TECH",
   verification: {
     google: "z_MkeforSz_85xlRgmmXIV42sZXk_z6LprvbZ5AZKWk",
   },
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://xbuctech.com",
-    siteName: "XBUC TECH",
-    title: "XBUC TECH | IT and Cybersecurity Solutions",
+    url: "https://x-buctech.com",
+    siteName: "X-BUC TECH",
+    title: "X-BUC TECH | IT and Cybersecurity Solutions",
     description:
       "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "XBUC TECH | IT and Cybersecurity Solutions",
+    title: "X-BUC TECH | IT and Cybersecurity Solutions",
     description:
       "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
   },
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "XBUC TECH",
-  url: "https://xbuctech.com",
-  email: "info@xbuctech.com",
+  name: "X-BUC TECH",
+  url: "https://x-buctech.com",
+  email: "info@x-buctech.com",
   telephone: "+1-512-584-6924",
   description:
     "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
@@ -60,13 +60,13 @@ const organizationJsonLd = {
     streetAddress: "14205 N Mopac Expy #500",
     addressLocality: "Austin",
     addressRegion: "TX",
-    postalCode: "78731",
+    postalCode: "78728",
     addressCountry: "US",
   },
   sameAs: [
     "https://www.linkedin.com/company/x-buctech/",
-    "https://x.com/xbuctech",
-    "https://www.instagram.com/xbuctech/",
+    "https://x.com/x-buctech",
+    "https://www.instagram.com/x-buctech/",
     "https://www.facebook.com/profile.php?id=61594184391657",
   ],
 };

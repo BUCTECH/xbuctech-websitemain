@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "XBUC TECH | IT and Cybersecurity Solutions";
+export const alt = "X-BUC TECH | IT and Cybersecurity Solutions";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -19,7 +19,7 @@ export default function OpengraphImage() {
           color: "#ffffff",
         }}
       >
-        <div style={{ fontSize: 34, color: "#818cf8", letterSpacing: 6 }}>XBUC TECH</div>
+        <div style={{ fontSize: 34, color: "#818cf8", letterSpacing: 6 }}>X-BUC TECH</div>
         <div style={{ fontSize: 72, fontWeight: 700, marginTop: 24, lineHeight: 1.1 }}>
           Secure IT. Stronger Cybersecurity.
         </div>

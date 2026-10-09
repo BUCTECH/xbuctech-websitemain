@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How XBUC TECH collects, uses, and protects the information you submit through this website.",
+    "How X-BUC TECH collects, uses, and protects the information you submit through this website.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -39,7 +39,7 @@ const sections = [
   {
     title: "Retention and your choices",
     body: [
-      "We keep inquiry information for as long as needed to respond to you and manage any resulting business relationship. To ask us to access, correct, or delete information you have sent us, contact info@xbuctech.com.",
+      "We keep inquiry information for as long as needed to respond to you and manage any resulting business relationship. To ask us to access, correct, or delete information you have sent us, contact info@x-buctech.com.",
     ],
   },
   {
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-6 text-base leading-7 text-neutral-400">
-            This policy explains how XBUC TECH handles the information you
+            This policy explains how X-BUC TECH handles the information you
             share with us through this website.
           </p>
 
@@ -83,8 +83,8 @@ export default function PrivacyPage() {
 
           <p className="mt-12 border-t border-white/10 pt-6 text-sm text-neutral-500">
             Questions? Email{" "}
-            <a className="text-indigo-300 hover:text-white" href="mailto:info@xbuctech.com">
-              info@xbuctech.com
+            <a className="text-indigo-300 hover:text-white" href="mailto:info@x-buctech.com">
+              info@x-buctech.com
             </a>
             . Last updated October 8, 2026.
           </p>

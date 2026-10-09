@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Request a consultation with XBUC TECH about cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, or software testing.",
+    "Request a consultation with X-BUC TECH about cybersecurity, managed IT, cloud infrastructure, network visibility, compliance, or software testing.",
   alternates: { canonical: "/contact" },
 };
 
@@ -54,7 +54,7 @@ export default async function ContactPage({
 
             <div className="mt-10 flex flex-col gap-5 border-t border-white/10 pt-8">
               <a
-                href="mailto:info@xbuctech.com"
+                href="mailto:info@x-buctech.com"
                 className="group flex items-start gap-3 text-sm text-neutral-300 transition-colors hover:text-white"
               >
                 <Mail size={16} className="mt-0.5 shrink-0 text-indigo-400" />
@@ -62,7 +62,7 @@ export default async function ContactPage({
                   <span className="text-xs uppercase tracking-widest text-neutral-600">
                     Email address
                   </span>
-                  info@xbuctech.com
+                  info@x-buctech.com
                 </span>
               </a>
               <a
@@ -85,15 +85,15 @@ export default async function ContactPage({
                   </span>
                   14205 N Mopac Expy #500
                   <br />
-                  Austin, TX 78731
+                  Austin, TX 78728
                 </span>
               </span>
             </div>
 
             <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/60">
               <iframe
-                title="XBUC TECH office map"
-                src="https://www.google.com/maps?q=14205%20N%20Mopac%20Expy%20%23500%2C%20Austin%2C%20TX%2078731&output=embed"
+                title="X-BUC TECH office map"
+                src="https://www.google.com/maps?q=14205%20N%20Mopac%20Expy%20%23500%2C%20Austin%2C%20TX%2078728&output=embed"
                 className="h-52 w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

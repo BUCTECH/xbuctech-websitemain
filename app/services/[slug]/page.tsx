@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: service.title,
     description: service.summary,
-    keywords: [service.shortTitle, ...service.workstreams.map((w) => w.name), "XBUC TECH"],
+    keywords: [service.shortTitle, ...service.workstreams.map((w) => w.name), "X-BUC TECH"],
     alternates: { canonical: `/services/${service.slug}` },
     openGraph: {
-      title: `${service.title} | XBUC TECH`,
+      title: `${service.title} | X-BUC TECH`,
       description: service.summary,
       url: `/services/${service.slug}`,
       type: "website",

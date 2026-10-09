@@ -15,9 +15,6 @@ export function ServiceHighlights() {
           <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
             Smart IT &amp; cybersecurity solutions, <em className="not-italic text-indigo-400">tailored for you.</em>
           </h2>
-          <p className="mt-5 text-base leading-7 text-neutral-400">
-            Six service areas. Each can stand alone or fit into a broader security and technology program.
-          </p>
         </Reveal>
 
         <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-3">
