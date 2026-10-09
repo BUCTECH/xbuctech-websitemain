@@ -183,7 +183,7 @@ export function ContactForm({ selectedService, focus }: ContactFormProps) {
             <div>
               <p className="font-semibold">Request submitted</p>
               <p className="mt-1 text-sm text-emerald-200">
-                Thanks for reaching out. We will follow up using the email address or phone number you provided.
+                Thanks for reaching out. We will follow up within 4 hours using the email address or phone number you provided.
               </p>
             </div>
           </div>

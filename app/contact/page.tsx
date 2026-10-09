@@ -42,7 +42,7 @@ export default async function ContactPage({
               </em>
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-neutral-400 sm:text-lg">
-              Tell us what you need to protect, fix, or improve. We will review your request and recommend a clear next step.
+              Tell us what you need to protect, fix, or improve. We will review your request and respond within 4 hours.
             </p>
             {params.focus ? (
               <p className="mt-5 max-w-md border-l border-indigo-400/60 pl-4 text-sm leading-relaxed text-indigo-200">
