@@ -39,7 +39,7 @@ const sections = [
   {
     title: "Retention and your choices",
     body: [
-      "We keep inquiry information for as long as needed to respond to you and manage any resulting business relationship. To ask us to access, correct, or delete information you have sent us, contact info@xbuctech.",
+      "We keep inquiry information for as long as needed to respond to you and manage any resulting business relationship. To ask us to access, correct, or delete information you have sent us, contact info@xbuctech.com.",
     ],
   },
   {
@@ -83,8 +83,8 @@ export default function PrivacyPage() {
 
           <p className="mt-12 border-t border-white/10 pt-6 text-sm text-neutral-500">
             Questions? Email{" "}
-            <a className="text-indigo-300 hover:text-white" href="mailto:info@xbuctech">
-              info@xbuctech
+            <a className="text-indigo-300 hover:text-white" href="mailto:info@xbuctech.com">
+              info@xbuctech.com
             </a>
             . Last updated October 8, 2026.
           </p>

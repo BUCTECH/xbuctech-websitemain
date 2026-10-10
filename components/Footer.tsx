@@ -43,8 +43,8 @@ export function Footer() {
 
         <div className="flex flex-col items-start gap-3 text-sm text-neutral-400">
           <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500">Contact</p>
-          <a href="mailto:info@xbuctech" className="transition-colors hover:text-white">
-            info@xbuctech
+          <a href="mailto:info@xbuctech.com" className="transition-colors hover:text-white">
+            info@xbuctech.com
           </a>
           <a href="tel:+15125846924" className="transition-colors hover:text-white">
             512-584-6924
