@@ -7,14 +7,14 @@ export const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export type Sender = { email: string; label: string };
 
 const defaultSenders: Sender[] = [
-  { email: "hello@x-buctech.com", label: "Hello" },
-  { email: "info@x-buctech.com", label: "Info" },
-  { email: "support@x-buctech.com", label: "Support" },
-  { email: "admin@x-buctech.com", label: "Admin" },
-  { email: "noreply@x-buctech.com", label: "No Reply" },
+  { email: "hello@xbuctech", label: "Hello" },
+  { email: "info@xbuctech", label: "Info" },
+  { email: "support@xbuctech", label: "Support" },
+  { email: "admin@xbuctech", label: "Admin" },
+  { email: "noreply@xbuctech", label: "No Reply" },
 ];
 
-// MAIL_SENDERS="Hello:hello@x-buctech.com,Support:support@x-buctech.com" overrides the defaults.
+// MAIL_SENDERS="Hello:hello@xbuctech,Support:support@xbuctech" overrides the defaults.
 export function getSenders(): Sender[] {
   const raw = process.env.MAIL_SENDERS;
   if (!raw) return defaultSenders;

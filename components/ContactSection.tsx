@@ -39,11 +39,11 @@ export function ContactSection() {
 
           <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-neutral-400">
             <a
-              href="mailto:info@x-buctech.com"
+              href="mailto:info@xbuctech"
               className="flex items-center gap-3 transition-colors hover:text-white"
             >
               <Mail size={16} className="text-indigo-400" />
-              info@x-buctech.com
+              info@xbuctech
             </a>
             <a
               href="tel:+15125846924"

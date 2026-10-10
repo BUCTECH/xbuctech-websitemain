@@ -54,7 +54,7 @@ export default async function ContactPage({
 
             <div className="mt-10 flex flex-col gap-5 border-t border-white/10 pt-8">
               <a
-                href="mailto:info@x-buctech.com"
+                href="mailto:info@xbuctech"
                 className="group flex items-start gap-3 text-sm text-neutral-300 transition-colors hover:text-white"
               >
                 <Mail size={16} className="mt-0.5 shrink-0 text-indigo-400" />
@@ -62,7 +62,7 @@ export default async function ContactPage({
                   <span className="text-xs uppercase tracking-widest text-neutral-600">
                     Email address
                   </span>
-                  info@x-buctech.com
+                  info@xbuctech
                 </span>
               </a>
               <a

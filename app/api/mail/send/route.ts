@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid mail access key." }, { status: 401 });
   }
   if (!isValidText(from, 320) || !companyEmailPattern.test(from)) {
-    return NextResponse.json({ error: "The sender must use an @x-buctech.com address." }, { status: 400 });
+    return NextResponse.json({ error: "The sender must use an @xbuctech address." }, { status: 400 });
   }
 
   const to = parseRecipients(body.to);

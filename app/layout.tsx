@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://x-buctech.com"),
+  metadataBase: new URL("https://xbuctech"),
   title: {
     default: "X-BUC TECH | IT and Cybersecurity Solutions",
     template: "%s | X-BUC TECH",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://x-buctech.com",
+    url: "https://xbuctech",
     siteName: "X-BUC TECH",
     title: "X-BUC TECH | IT and Cybersecurity Solutions",
     description:
@@ -50,8 +50,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "X-BUC TECH",
-  url: "https://x-buctech.com",
-  email: "info@x-buctech.com",
+  url: "https://xbuctech",
+  email: "info@xbuctech",
   telephone: "+1-512-584-6924",
   description:
     "Practical IT and cybersecurity solutions that help businesses reduce risk, protect critical systems, and operate confidently.",
