@@ -16,14 +16,14 @@ const eventTone: Record<string, string> = {
 };
 
 export default function WebhookPanel({ accessKey, configured, forwardTo }: { accessKey: string; configured: boolean; forwardTo: string | null }) {
-  const [endpoint] = useState(() => (typeof window === "undefined" ? "" : window.location.origin) + "/api/mail/webhook");
+  const [endpoint] = useState(() => (typeof window === "undefined" ? "" : window.location.origin) + "/api/email/webhook");
   const [copied, setCopied] = useState(false);
   const [events, setEvents] = useState<WebhookEvent[]>([]);
   const [loading, setLoading] = useState(false);
 
   const load = useCallback(
     () =>
-      fetch("/api/mail/webhook", { headers: { "x-mail-key": accessKey } })
+      fetch("/api/email/webhook", { headers: { "x-mail-key": accessKey } })
         .then(async (response) => { if (response.ok) setEvents((await response.json()).events); })
         .catch(() => undefined)
         .finally(() => setLoading(false)),

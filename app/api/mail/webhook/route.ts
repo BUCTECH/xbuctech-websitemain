@@ -7,7 +7,7 @@ type ResendWebhook = {
   data: { email_id?: string; from?: string; to?: string[]; subject?: string };
 };
 
-// Resend → POST here. Register https://<your-domain>/api/mail/webhook in the Resend dashboard.
+// Resend → POST here. Register https://<your-domain>/api/email/webhook in the Resend dashboard.
 export async function POST(request: Request) {
   const secret = process.env.RESEND_WEBHOOK_SECRET;
   if (!secret) {
